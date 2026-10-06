@@ -38,7 +38,7 @@ Captured by CI from *Atlas*, the example project tracker, on macOS 26 and on an 
 
 | iPad in landscape: every column | iPad in portrait: collapsed |
 | :---: | :---: |
-| <img src="docs/screenshots/ipad-full.png" alt="Atlas on iPad in landscape: sidebar, task list, task detail and the inspector as a trailing column" width="440"> | <img src="docs/screenshots/ipad-collapsed.png" alt="Atlas on iPad in portrait: the sidebar has collapsed, the task list and the detail share the screen and the inspector is presented as a sheet" width="300"> |
+| <img src="docs/screenshots/ipad-full.png" alt="Atlas on iPad in landscape: sidebar, task list, task detail and the inspector as a trailing column" width="440"> | <img src="docs/screenshots/ipad-collapsed.png" alt="Atlas on iPad in portrait: the sidebar has collapsed, the task list and the detail share the screen and the inspector button opens it as a sheet" width="300"> |
 
 The iPad simulator is never rotated, since rotation from the command line is unreliable. It stays in its default portrait orientation. `ipad-collapsed.png` is that real portrait layout. For `ipad-full.png` the app lays itself out at the 13-inch landscape size (1376 × 1032 points, same size classes) scaled to the screen width, and the script crops the 4:3 band.
 

@@ -9,7 +9,8 @@ enum ScreenshotScene: String, Sendable {
     /// Every column: projects, tasks, the open task and the inspector.
     /// On iPad it is laid out on a landscape canvas (see `LandscapeCanvas`).
     case full
-    /// iPad in its natural portrait orientation: the sidebar collapses and the inspector is a sheet.
+    /// iPad in its natural portrait orientation: the sidebar collapses and the inspector, which
+    /// opens as a sheet here, stays closed so the capture never catches the sheet animating in.
     case collapsed
     /// Mac: projects, tasks and the open task with the inspector dismissed.
     case inspectorHidden = "inspector-hidden"
@@ -37,7 +38,7 @@ enum ScreenshotScene: String, Sendable {
 
     /// Whether the inspector is presented in this scene.
     var showsInspector: Bool {
-        self != .inspectorHidden
+        self == .full
     }
 }
 
